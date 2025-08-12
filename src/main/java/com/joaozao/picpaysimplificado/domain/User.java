@@ -3,6 +3,8 @@ package com.joaozao.picpaysimplificado.domain;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.math.BigDecimal;
+
 @Entity
 @Table(name = "users")
 @Getter
@@ -15,9 +17,9 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String firstname;
+    private String firstName;
 
-    private String lastname;
+    private String lastName;
 
     @Column(unique = true)
     private String document;
@@ -27,7 +29,7 @@ public class User {
 
     private String password;
 
-    private String balance;
+    private BigDecimal balance;
 
     @Enumerated(EnumType.STRING)
     private UserType userType;
