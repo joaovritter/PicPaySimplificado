@@ -1,5 +1,6 @@
 package com.joaozao.picpaysimplificado.domain;
 
+import com.joaozao.picpaysimplificado.dto.UserDTO;
 import jakarta.persistence.*;
 import lombok.*;
 

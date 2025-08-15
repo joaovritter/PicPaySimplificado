@@ -25,7 +25,7 @@ public class NotificationService {
 //            System.out.println("Erro ao enviar notificação");
 //            throw new Exception("Serviço de notificação indisponível no momento, tente novamente mais tarde.");
 //        }
-        System.out.println("Notificação enviada com sucesso para " );
+        System.out.println("Notificação enviada com sucesso para " + email + ": " + message);
     }
 
 }
